@@ -1,5 +1,6 @@
 // import react and bootstrap
+import React from "react";
 
-// add grid function
+// create grid class with react component
 
 // create grid layout 
