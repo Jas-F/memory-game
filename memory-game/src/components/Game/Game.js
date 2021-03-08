@@ -30,11 +30,14 @@ constructor(props) {
                                 {/* add onclick function for images being mapped */}
                                 <img src={`/Images/${item}`} onClick={() => {
                                     // push item array 
-                                    // copy state and insert
+                                    // copy state and create new var
+                                    // add images to it 
+                                    // update state
                                 let newState = {...this.state}
-                                newState.clicked
+                                newState.clickedImages.push(item)
+                                this.setState(newState)
 
-                                    console.log(item)
+                                    console.log(this.state)
                                 }}></img>
                             </Col>
 
