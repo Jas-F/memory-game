@@ -12,7 +12,8 @@ constructor(props) {
     super(props)
     this.state={
         clickedImages: [],
-        score: 0
+        score: 0,
+        gameOver: False
     }
 }
     // render images
@@ -33,10 +34,20 @@ constructor(props) {
                                     // copy state and create new var
                                     // add images to it 
                                     // update state
-                                let newState = {...this.state}
-                                newState.clickedImages.push(item)
-                                this.setState(newState)
+                                    // add if statement to only allow first time clicked images to array
+                                    if(this.state.clickedImages.includes(item)) {
 
+                                    // set new state of score to 0 display game over
+                                        setState
+                                    
+                                    }else{
+                                        // push to array
+                                        let newState = {...this.state}
+                                        newState.clickedImages.push(item)
+                                        this.setState(newState)
+                                    }
+
+                              
                                     console.log(this.state)
                                 }}></img>
                             </Col>
