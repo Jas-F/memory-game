@@ -1,6 +1,6 @@
 // import react and bootstrap
 import React from "react";
-import {Row, Col} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 // create array of images from public folder
 const IMG = ["cuban.jpg", "kieser.jpg", "kiyosaki.jpg", "musk.jpg"]
@@ -10,14 +10,23 @@ class Game extends React.Component {
     render() {
         return (
             // create grid layout 
+            // map over images
             <container>
                 <Row>
-                    <Col>
-                    123
-                    </Col>
+                    {IMG.map(item => {
+                        return (
+                            // return images
+                            <Col>
+                            {/*  use back tick notation*/}
+                                <img src={`/Images/${item}`}></img>
+                            </Col>
+
+                        )
+                    })}
+
                 </Row>
             </container>
-    
+
         )
     }
 }
