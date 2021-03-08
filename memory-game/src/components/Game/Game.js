@@ -13,7 +13,7 @@ constructor(props) {
     this.state={
         clickedImages: [],
         score: 0,
-        gameOver: False
+        gameOver: false
     }
 }
     // render images
@@ -22,6 +22,8 @@ constructor(props) {
             // create grid layout 
             // map over images
             <container>
+                {/* create score */}
+            <h1>Score:{this.state.score}</h1>
                 <Row>
                     {IMG.map(item => {
                         return (
@@ -38,7 +40,10 @@ constructor(props) {
                                     if(this.state.clickedImages.includes(item)) {
 
                                     // set new state of score to 0 display game over
-                                        setState
+                                        let newState = {...this.state}
+                                     newState.gameOver = true
+                                     newState.Score = 0
+                                        this.setState(newState)
                                     
                                     }else{
                                         // push to array
