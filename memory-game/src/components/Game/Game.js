@@ -19,7 +19,7 @@ class Game extends React.Component {
                             <Col  >
                                 {/*  use back tick notation*/}
                                 {/* add onclick function for images being mapped */}
-                                <img src={`/Images/${item}`} onClick={(item) => {
+                                <img src={`/Images/${item}`} onClick={() => {
 
                                     console.log(item)
                                 }}></img>

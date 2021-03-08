@@ -8,6 +8,14 @@
 // randomize images
 // make conditional statements such as if pic id === pic id then loose game score = 0
 // if pic id 1 !== pic id then shuffle images and increment score by 1
+// how the game works
+// create 2 arrays one names clicked
+// if clicked push to array
+// 2nd for loop that iterates through array
+// if image is clicked & image is not array
+// push to clicked array
+// iterate score by 1
+// if image is present in array display game over score = 0
 
 import React from "react";
 import './App.css';
