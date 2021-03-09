@@ -44,7 +44,7 @@ class Game extends React.Component {
                                 <div className="galleryImage">
                                     {/*  use back tick notation*/}
                                     {/* add onclick function for images being mapped */}
-                                    <img src={`/Images/${item}`} onClick={() => {
+                                    <img src={`Images/${item}`} onClick={() => {
                                         // push item array 
                                         // copy state and create new var
                                         // add images to it 
