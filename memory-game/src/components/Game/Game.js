@@ -3,7 +3,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 // create array of images from public folder
-const IMG = ["cuban.jpg", "kieser.jpg", "kiyosaki.jpg", "musk.jpg", "rogers.jpg", "buffet.jpg", "cj.jpg", "ma.jpg", "pauly.jpg"]
+const IMG = ["cuban.jpg", "kieser.jpg", "kiyosaki.jpg", "musk.jpg", "buffet.jpg", "cj.jpg", "ma.jpg", "pauly.jpg"]
 // create grid class with react component
 class Game extends React.Component {
     // build constructor with original state of image array and score
