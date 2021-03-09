@@ -37,7 +37,23 @@
   }
 }
 
-*{
+/* use css to arrange images */
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-outline: 1px dotted red;
+.galleryImage{
+
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+}
+
+.galleryImage img{
+  width: 100%;
 }

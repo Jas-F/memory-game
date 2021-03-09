@@ -18,6 +18,13 @@ class Game extends React.Component {
     }
     // render images
     render() {
+        // suffle array when clicked and gameover = false
+        var arrayToDisplay = shuffleArray(IMG) || IMG
+
+        function shuffleArray(arr) {
+
+        }
+
         console.log(this.state)
         return (
             // create grid layout 
@@ -27,13 +34,14 @@ class Game extends React.Component {
                 <h1>Score:{this.state.clickedImages.length}</h1>
                 {/* display game over when true */}
                 {this.state.gameOver && <h1>Game Over</h1>}
-                <Row>
-                    {
-                        !this.state.gameOver &&
-                        IMG.map(item => {
+                <Row className="gallery">
+                    {/* {if the game is not over return images */}
+                    {!this.state.gameOver &&
+                        arrayToDisplay.map(item => {
                             return (
                                 // return images
-                                <Col  >
+                                // add col size to display number of col bases on size
+                                <div className="galleryImage">
                                     {/*  use back tick notation*/}
                                     {/* add onclick function for images being mapped */}
                                     <img src={`/Images/${item}`} onClick={() => {
@@ -61,7 +69,7 @@ class Game extends React.Component {
 
 
                                     }}></img>
-                                </Col>
+                                </div>
 
                             )
                         })}
