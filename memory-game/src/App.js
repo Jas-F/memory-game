@@ -16,10 +16,10 @@
 // push to clicked array
 // iterate score by 1
 // if image is present in array display game over score = 0
+// delete nav and footer because not in use
 
 import React from "react";
 import './App.css';
-import Nav from "./components/Nav/Navbar";
 import Jumbo from "./components/Jumbotron/Jumbo";
 import Game from "./components/Game/Game";
 
@@ -28,10 +28,8 @@ import Game from "./components/Game/Game";
 function App() {
   return (
     <div className="App">
-      {/* <Nav /> */}
       <Jumbo />
       <Game />
-      {/* <Footer /> */}
     </div>
   );
 }
