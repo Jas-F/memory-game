@@ -19,13 +19,15 @@ class Game extends React.Component {
     // render images
     render() {
         // suffle array when clicked and gameover = false
-        var arrayToDisplay = shuffleArray(IMG) || IMG
+        var arrayToDisplay = shuffleArray(IMG)
 
         function shuffleArray(arr) {
             // grab array then sort the array using a math.random method
             // create sort function that compares the math. random number with a decimal
             // sort will try to compare each random element with a decemal which is close the math.randoms output returning a shuffled array of items
-
+            arr.sort(() => Math.random() - .5);
+            // return new array
+            return arr
             
 
         }
