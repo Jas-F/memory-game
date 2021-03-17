@@ -61,6 +61,10 @@
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Bootstrap](https://getbootstrap.com/)
 
+## Reference
+
+*https://javascript.info/task/shuffle
+
 ## Deployed Link
 
 * [See Live Site](https://jas-f.github.io/memory-game/)
