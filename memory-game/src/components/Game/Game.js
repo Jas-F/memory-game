@@ -22,6 +22,11 @@ class Game extends React.Component {
         var arrayToDisplay = shuffleArray(IMG) || IMG
 
         function shuffleArray(arr) {
+            // pick a random number from array
+            // create a var to equal array.length 
+            // create a random number generator between 1 - 5
+            // the number produced used the number to pick the image with the same index number of the array
+            
 
         }
 
@@ -44,7 +49,8 @@ class Game extends React.Component {
                                 <div className="galleryImage">
                                     {/*  use back tick notation*/}
                                     {/* add onclick function for images being mapped */}
-                                    <img src={`Images/${item}`} onClick={() => {
+                                    {/* added memory-game to return images on local machine */}
+                                    <img src={`/memory-game/Images/${item}`} onClick={() => {
                                         // push item array 
                                         // copy state and create new var
                                         // add images to it 
