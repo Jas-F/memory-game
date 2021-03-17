@@ -22,10 +22,10 @@ class Game extends React.Component {
         var arrayToDisplay = shuffleArray(IMG) || IMG
 
         function shuffleArray(arr) {
-            // pick a random number from array
-            // create a var to equal array.length 
-            // create a random number generator between 1 - 5
-            // the number produced used the number to pick the image with the same index number of the array
+            // grab array then sort the array using a math.random method
+            // create sort function that compares the math. random number with a decimal
+            // sort will try to compare each random element with a decemal which is close the math.randoms output returning a shuffled array of items
+
             
 
         }
